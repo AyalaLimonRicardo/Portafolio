@@ -1,0 +1,207 @@
+/* ---- HEADER ---- */
+header {
+    background-image: linear-gradient(#1e2838 30%, #3c5171 90%);
+    background-size: 60%;
+    max-height: 600px;
+}
+
+/* Menú */
+header .menu {
+    margin: 40px;
+    text-align: center;
+}
+
+header .menu a {
+    background: transparent;
+    margin: 0 20px;
+    color: #fff;
+    padding: 9px;
+    font-size: 1em;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+header .menu a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    border-bottom: 2px solid #fff;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+/* Texto */
+header .container-text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 100px 0 150px;
+}
+
+header .container-text .text {
+    background-color: #101c33;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 60px;
+}
+
+header .container-text .text h1,
+header .container-text .text h2,
+header .container-text .text button {
+    color: #fff;
+    font-weight: 300;
+    margin: 0;
+}
+
+header .container-text .text .name {
+    margin-bottom: 10px;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+header .container-text .text .profession {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+
+/* Botón CV */
+header .container-text .text .btn-cv {
+    background: transparent;
+    cursor: pointer;
+    line-height: 45px;
+    max-width: 160px;
+    text-transform: uppercase;
+    width: 100%;
+    color: #fff;
+    border: 2px solid #a93226;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s ease;
+}
+
+header .container-text .text .btn-cv::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #a93226;
+    z-index: -1;
+    transition: height 0.4s ease;
+}
+
+header .container-text .text .btn-cv:hover::before {
+    height: 100%;
+}
+
+header .container-text .text .btn-cv:hover {
+    color: #fff;
+}
+/* FOOTER GENERAL */
+
+footer {
+    background: #1c1c1c;
+    color: white;
+    padding-top: 40px;
+}
+
+
+/* CONTACT FORM */
+
+.form-message {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    gap: 15px;
+}
+
+.form-message input,
+.form-message textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-message textarea {
+    resize: none;
+    height: 120px;
+}
+
+.btn-send-msg {
+    background: #0077ff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-send-msg:hover {
+    background: #0056c7;
+}
+
+
+/* SOCIAL MEDIA */
+
+#section-social-media {
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+
+/* ICONOS CIRCULARES */
+
+.social-icons a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+}
+
+
+/* COLORES REALES DE REDES */
+
+.facebook {
+    background: #1877f2;
+}
+
+.linkedin {
+    background: #0077b5;
+}
+
+.github {
+    background: #333;
+}
+
+
+/* ANIMACIÓN */
+
+.social-icons a:hover {
+    transform: scale(1.15);
+}
+
+
+/* COPYRIGHT */
+
+.copyright {
+    font-size: 14px;
+    opacity: 0.7;
+}
