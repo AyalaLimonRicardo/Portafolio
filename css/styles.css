@@ -1,4 +1,23 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0;
+    padding-top: 0;
+}
+
+.menu {
+    margin-top: 0;
+}
+
 /* ---- HEADER ---- */
+header {
+    margin-top: 0;
+}
+
 header {
     background-image: linear-gradient(#1e2838 30%, #3c5171 90%);
     background-size: 60%;
@@ -7,7 +26,7 @@ header {
 
 /* Menú */
 header .menu {
-    margin: 40px;
+
     text-align: center;
 }
 
@@ -146,7 +165,7 @@ main.container {
 
 
 /* Estilo texto de la seccion about */
- #section-about .text {
+#section-about .text {
     color: #5a5a5a;
     font-weight: 600;
     font-size: 1em;
@@ -155,7 +174,7 @@ main.container {
     margin: 40px auto 60px auto;
 }
 
- #section-about .text .title {
+#section-about .text .title {
     font-size: 34px;
     margin-bottom: 40px;
     line-height: 34px;
@@ -169,7 +188,184 @@ main.container {
     text-decoration: underline;
 }
 
+/* Seccion de trabajos */
+#section-jobs {
+    background: #f2f2f2;
+    padding: 60px 0;
+}
 
+#section-jobs .container {
+    overflow: hidden;
+}
+
+#section-jobs h3 {
+    font-size: 34px;
+    margin-bottom: 40px;
+    line-height: 34px;
+    font-weight: 300;
+    color: #dd820d;
+    text-align: center;
+}
+
+#section-jobs .container-jobs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.job {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.job img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.job-description {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.job img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.job {
+    width: 30%;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* animacion hover trabajos */
+.job {
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.job-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.job-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 40, 56, 0.85);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.job-img:hover img {
+    transform: scale(1.1);
+}
+
+.job-img:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 14px;
+}
+
+/* SECTION HABILIDADES */
+#section-skills {
+    padding: 60px 0;
+    background: #f5f7fa;
+}
+
+#section-skills .title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container-skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skill {
+    width: 250px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: .3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.skill:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.icon-skill {
+    margin-bottom: 15px;
+    color: #1e2838;
+}
+
+.description .name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.description .level {
+    color: #777;
+    font-size: 14px;
+}
+
+/* RESPONSIVE HABILIDADES */
+
+@media (max-width: 992px){
+    
+    .skill{
+        width: 45%;
+    }
+
+}
+
+@media (max-width: 576px){
+    
+    .container-skills{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill{
+        width: 90%;
+    }
+
+}
 /* FOOTER GENERAL */
 
 footer {
