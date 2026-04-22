@@ -494,3 +494,34 @@ header {
 #section-home {
     scroll-margin-top: 80px;
 }
+
+/* ===== RESPONSIVE TRABAJOS ===== */
+
+@media (max-width: 992px) {
+
+    #section-jobs .container-jobs {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .job {
+        width: 45%;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    #section-jobs .container-jobs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .job {
+        width: 100%;
+        max-width: 320px;
+        margin-bottom: 30px;
+    }
+
+}
+
